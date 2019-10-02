@@ -1,0 +1,11 @@
+.team-img {
+    border-radius: 100%;  
+}
+#team1 {
+
+    width: 400px;
+}
+#team2 {
+    height: 250px;
+    width: 250px;
+}
