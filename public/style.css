@@ -5,48 +5,73 @@
 h1{
   color: #004f9f;
   font-family: 'minimalust';
-  font-size: 100px;
-  margin-left: 24%;
+  font-size: 80px;
+  margin-left:18%;
   margin-top: 4%;
 }
 
-.team-img {
-    border-radius: 100%;  
-    margin-top: 11%;
-    border-radius: 100%;
+.team-img{
     border: 5px solid #004f9f;
-    -webkit-box-shadow: 10px 10px 9px 0px rgba(153,147,153,1);
-    -moz-box-shadow: 10px 10px 9px 0px rgba(153,147,153,1);
-    box-shadow: 10px 10px 9px 0px rgba(153,147,153,1);
+    -webkit-box-shadow: 5px 5px 9px 0px rgba(153,147,153,1);
+    -moz-box-shadow: 5px 5px 9px 0px rgba(153,147,153,1);
+    box-shadow: 5px 5px 9px 0px rgba(153,147,153,1);
     margin-right:2.5%;
     margin-left:2.5%;
-  
+    justify-content: flex-end;
 }
-.waiters{
-    width: 280px;
-}
-#position1 {
 
-    width: 400px;
-}
 .hide {
     display: none;
 }
 p {
     color: blue;
 }
-.waiters{
-  width: 10%;
-}
-#position1 {
-  width: 13%;
-}
 
-#team2 {
-    height: 250px;
-    width: 250px;
+.flip-card {
+  background-color: white;
+  width: 180px;
+  height: 180px;
+  margin-top: 50px;
+
 }
 
+.flip-card-inner {
+  width: 180px;
+  height: 180px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  border-radius:100%;
+  background-color: transparent;
+}
 
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
 
+.flip-card-back{
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  backface-visibility: show;
+}
+img{
+  width:180px;
+  height:180px;
+  border-radius:100%;
+}
+
+.flip-card-front{
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  backface-visibility: hidden;
+  background-color: #004f9f;
+  border-radius: 100%;
+  border:5px solid #004f9f;
+  margin-left: 5px;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+}
 
