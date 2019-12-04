@@ -44,7 +44,7 @@ p {
   background-color: transparent;
 }
 
-.flip-card:hover .flip-card-inner {
+.flipped .flip-card-inner {
   transform: rotateY(180deg);
 }
 
