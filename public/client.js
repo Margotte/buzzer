@@ -38,7 +38,7 @@ function updateFlipCards() {
 }
 
 function handleParsifiedMessage(parsified) {
-  if (parsified.toggled == true) {
+  if (parsified.toggled) {
     if (!team_array.includes(parsified.name)) {
       team_array.push(parsified.name);
       updateFlipCards();
@@ -60,4 +60,26 @@ connection.onmessage = (message) => {
   alert(message.data);
   const parsified = JSON.parse(data);
   handleParsifiedMessage(parsified);
+}
+
+// Flip all 6 circles
+function pablo() {
+  team_array = ["alpaga", "chevre", "kangourou", "koala", "sloth", "panda"];
+  updateFlipCards();
+}
+
+// Set if a specific team name is toggled (true = in queue, false = out of the queue)
+// Currently only used for debugging
+function setToggled(name, toggled) {
+  if (toggled) {
+    if (!team_array.includes(name)) {
+      team_array.push(name);
+      updateFlipCards();
+    }
+  } else {
+    if (team_array.includes(name)) {
+      team_array.splice(team_array.indexOf(name), 1);
+      updateFlipCards();
+    }
+  }
 }
