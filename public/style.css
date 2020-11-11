@@ -33,7 +33,6 @@ p {
   width: 180px;
   height: 180px;
   margin-top: 50px;
-
 }
 
 .flip-card-inner {
@@ -81,6 +80,7 @@ img{
 .container {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .numbering {
   background-color: lightgray;
@@ -96,4 +96,9 @@ img{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif  ;
   font-size: 30;
   box-shadow: 5px 5px 9px 0px rgba(153,147,153,1);
+}
+.team{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
