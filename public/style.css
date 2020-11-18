@@ -54,7 +54,7 @@ p {
   height: 180px;
   backface-visibility: show;
 }
-img{
+.team-img{
   width:180px;
   height:180px;
   border-radius:100%;
@@ -101,4 +101,5 @@ img{
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 190px;
 }
