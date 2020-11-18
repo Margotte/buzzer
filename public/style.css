@@ -12,20 +12,24 @@ h1{
 }
 
 .team-img{
-    border: 5px solid #004f9f;
-    -webkit-box-shadow: 5px 5px 9px 0px rgba(153,147,153,1);
-    -moz-box-shadow: 5px 5px 9px 0px rgba(153,147,153,1);
-    box-shadow: 5px 5px 9px 0px rgba(153,147,153,1);
-    margin-right:2.5%;
-    margin-left:2.5%;
-    justify-content: flex-end;
+  border: 5px solid #004f9f;
+  -webkit-box-shadow: 5px 5px 9px 0px rgba(153,147,153,1);
+  -moz-box-shadow: 5px 5px 9px 0px rgba(153,147,153,1);
+  box-shadow: 5px 5px 9px 0px rgba(153,147,153,1);
+  margin-right:2.5%;
+  margin-left:2.5%;
+  justify-content: flex-end;
+  width:180px;
+  height:180px;
+  border-radius:100%;
 }
 
 .hide {
-    display: none;
+  display: none;
 }
+
 p {
-    color: blue;
+  color: blue;
 }
 
 .flip-card {
@@ -77,6 +81,7 @@ p {
   font-size: 140;
   font-family: inter;
 }
+
 .container {
   display: flex;
   justify-content: space-around;
@@ -103,3 +108,27 @@ p {
   flex-direction: column;
   width: 190px;
 }
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:  #004f9f;
+  color: white;
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.text{
+  color:white;
+}
+
+#logo{
+  width:150px;
+  text-align: center;
+}
+
+
+
+
