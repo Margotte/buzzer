@@ -64,7 +64,7 @@ connection.onmessage = (message) => {
 
 // Flip all 6 circles
 function pablo() {
-  team_array = ["alpaga", "chevre", "kangourou", "koala", "sloth", "panda"];
+  team_array = ["chevre", "alpaga", "kangourou", "koala", "sloth", "panda"];
   updateFlipCards();
 }
 
