@@ -11,6 +11,7 @@ function setCardFlipState(index, state) {
       return;
     } else {
       card.classList.remove("flipped");
+      card.classList.add("unflipped")
     }
   } else {
     if (state) {
@@ -64,7 +65,7 @@ connection.onmessage = (message) => {
 
 // Flip all 6 circles
 function pablo() {
-  team_array = ["chevre", "alpaga", "kangourou", "koala", "sloth", "panda"];
+  team_array = ["chevre", "kangourou", "alpaga", "koala", "sloth", "panda"];
   updateFlipCards();
 }
 
