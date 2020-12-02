@@ -44,6 +44,9 @@ p{
 .flipped .flip-card-inner {
   transform: rotateY(900deg);
 }
+.unflipped{
+  transform: rotateY(-900deg);
+}
 
 .flip-card-back{
   position: absolute;
@@ -65,7 +68,7 @@ p{
   align-items: center;
   color: white;
   font-size: 140;
-  font-family: inter;
+  font-family: minimalust;
 }
 
 .container {
